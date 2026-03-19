@@ -148,7 +148,7 @@ def main() -> None:
     title_col, review_col = st.columns([8, 1])
 
     with title_col:
-        st.title("LAB2")
+        st.title(":rainbow[LAB2]")
 
     with review_col:
         with st.popover("Review"):
