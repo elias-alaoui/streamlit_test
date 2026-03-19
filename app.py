@@ -145,7 +145,7 @@ def render_review_feedback() -> None:
 def main() -> None:
     init_state()
 
-    title_col, review_col = st.columns([8, 1])
+    title_col, review_col = st.columns([7, 2])
 
     with title_col:
         st.title(":rainbow[LAB2]")
@@ -153,7 +153,7 @@ def main() -> None:
     with review_col:
         with st.popover("Review"):
             st.slider("Rate this app", 1, 10, key="review_score")
-            st.button("Submit", use_container_width=True, on_click=submit_review)
+            st.button("Submit", width="stretch", on_click=submit_review)
 
     render_review_feedback()
 
